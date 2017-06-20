@@ -1,0 +1,48 @@
+Notes from Python Course on Codecademy
+
+No {} brackets and no semi-colons;!
+Whitespace is really important - unlike C and Java
+
+A function is defined as below:
+
+def function_name(arguments):
+    print arguments
+
+Variables don't need to have types when defined, just starting using the name of it.
+Can find the type of a variable using:
+  type(variable_name)
+
+If statements are similar to C and Java:
+
+if(condition):
+    then do this
+elif(condition):
+    then do this
+else:
+    do this
+
+Inbuilt functions:
+max()
+min()
+abs()
+len()
+variable.lower()
+variable.upper()
+
+Importing libraries:
+
+import math
+   which means you would use math.sqrt()
+from math import *
+   which means you would use sqrt()
+
+Arrays/Lists:
+list_name.index(item) - returns the index number of that item if exists
+list_name.insert(index, item) - inserts at that point
+list_name.append(item) - inserts at the end of a list
+list_name.sort() - sorts the list
+
+Loops:
+
+for number in list:
+    print number
