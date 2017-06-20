@@ -3,6 +3,10 @@ Notes from Python Course on Codecademy
 No {} brackets and no semi-colons;!
 Whitespace is really important - unlike C and Java
 
+Printing to the command line is super easy:
+print "string"
+print variable_name
+
 A function is defined as below:
 
 def function_name(arguments):
@@ -41,8 +45,30 @@ list_name.index(item) - returns the index number of that item if exists
 list_name.insert(index, item) - inserts at that point
 list_name.append(item) - inserts at the end of a list
 list_name.sort() - sorts the list
+list_name.remove(item) - removes the item
 
 Loops:
 
 for number in list:
     print number
+
+Dictionaries/Key-value pairs
+residents = {'Puffin' : 104, 'Sloth' : 105, 'Burmese Python' : 106}
+
+print residents['Puffin']
+Will print 104
+They are mutable so can be changed after creation:
+
+residents['Hippo'] = 107
+will add a new item
+
+del dict_name[item_name] will delete the item
+
+You can't concatenate string and floats (like you can in java) so you use %
+
+print "Total: %s" % variable
+
+Asking for user input:
+variable = raw_input("Guess Row: ")
+
+while loops are very similar to C and Java
