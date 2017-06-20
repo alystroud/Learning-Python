@@ -6,6 +6,8 @@ Whitespace is really important - unlike C and Java
 Printing to the command line is super easy:
 print "string"
 print variable_name
+A comma on the end of a print statement, means print the next thing on the same line
+print "string",
 
 A function is defined as below:
 
@@ -72,3 +74,45 @@ Asking for user input:
 variable = raw_input("Guess Row: ")
 
 while loops are very similar to C and Java
+
+While/Else - new and different
+"Something completely different about Python is the while/else
+construction. while/else is similar to if/else, but there is a
+difference: the else block will execute anytime the loop condition
+is evaluated to False. This means that it will execute if the loop
+is never entered or if the loop exits normally. If the loop exits
+as the result of a break, the else will not be executed."
+
+For/Else
+Just like with while, for loops may have an else associated with them.
+In this case, the else statement is executed after the for, but only
+if the for ends normally—that is, not with a break. This code will break
+when it hits 'tomato', so the else block won't be executed.
+
+Anonymous Functions
+One of the more powerful aspects of Python is that it allows for a
+style of programming called functional programming, which means that
+you're allowed to pass functions around just as if they were variables
+or values. Sometimes we take this for granted, but not all languages
+allow this!
+
+self = this (in Java)
+
+class is similar to Java
+class ClassName(object):
+this means that this class inherits from the object class
+for def __init__ the first parameter should be self
+
+Inheritance:
+class ClassName(parentClass):
+
+Override works in the same way as Java, just create the method with the same name and input
+To use a parent method:
+super(PartTimeEmployee, self).calculate_wage(hours)
+where calculate_wage is the name of the parent method and hours in the argument
+
+Printing inside a method
+One useful class method to override is the built-in __repr__() method,
+which is short for representation; by providing a return value in this
+method, we can tell Python how to represent an object of our class
+(for instance, when using a print statement).
